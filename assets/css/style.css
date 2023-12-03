@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playpen+Sans&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playpen+Sans&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0px;
+    grid-template-areas:
+    "navbar navbar"
+    "aside main"
+    "footer footer";
+    grid-template-rows: 5vh calc(body -10vh) 5vh;
+    grid-template-columns: 10vw 90vw; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-grid{
+    grid-area: navbar;
+    padding: 1rem;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.aside-grid{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+    padding: 1rem;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: #C8C2BC;
+    font-family: 'Roboto', sans-serif; 
+}
+
+a{
+    color : #AB6D23;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 20%);
+    padding: 0.5em;
+}
+
+.footer-grid{
+    grid-area: footer;
+    background-color: blue ;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #C8C2BC;
+}
+
+.card{
+    text-align: center;
+    padding: 1em;
+}
+
+ 
+button{
+    padding: 0;
+    margin: 0%;
+}
+
+.formulario-de-contacto{
+    display: flex;
+    flex-direction: column;
+    background-color: blue ;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #C8C2BC;
+}
